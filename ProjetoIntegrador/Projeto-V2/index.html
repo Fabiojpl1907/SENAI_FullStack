@@ -34,50 +34,49 @@
 
 
 <body>
-<!------------  Nav bar ---------------------------------------------- -->
-
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(253, 238, 211);">
-  
-  <div class="container-fluid">
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <a class="navbar-brand" href="#"><img src="./_img/Abriga_Gatos.png" class="marca" width="150px"></a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <li class="nav-item p-2">
-          <a class="nav-link active" aria-current="page" href="./construcao.html" target="blank">Porque Abrigar</a>
-        </li>
-        <li class="nav-item p-2">
-          <a class="nav-link active" aria-current="page" href="./parceiros.html" target="blank">Parceiros</a>
-        </li>
-        <li class="nav-item p-2">
-          <a class="nav-link active" aria-current="page" href="./doacao.html" target="blank">Doações</a>
-        </li>
-        <li class="nav-item p-2">
-          <a class="nav-link active" aria-current="page" href="./contato.html" target="blank">Contatos</a>
-        </li>
-
-      </ul>
-      
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
-        <button class="btn btn-outline-warning" type="submit">Pesquisa</button>
-      </form>
-    
-    </div>
-  
-  </div>
-
-</nav>
-
-<!-- -------- lema --------------------------------------------------- -->
+<!------------  Nav bar e lema ---------------------------------------------- -->
       <div class="container">
+        
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(253, 238, 211)">
+  
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <a class="navbar-brand" href="#"><img src="./_img/Abriga_Gatos.png" width="130vh"></a>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./construcao.html" target="blank">Porque Abrigar</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./parceiros.html" target="blank">Parceiros</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./doacao.html" target="blank">Doações</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./contato.html" target="blank">Contatos</a>
+                </li>
+        
+              </ul>
+              
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Pesquisa</button>
+              </form>
+            
+            </div>
+          
+          </div>
+        
+        </nav>
+
           <div class="row justify-content-start">
               <div class="col">
                   <p class="lema">Gatos em um lar</p>
@@ -86,7 +85,7 @@
           </div>
       </div>
 
-<!-- ----- Banner ----------------------------------------------       -->
+<!-- ----- Detalhes ----------------------------------------------       -->
     <div class="container" id="main-image-container">
       <div class="main-image center-image">
           <div class="main-image-info">
@@ -98,6 +97,27 @@
   
     </div>
 
+<!-- ----- Modal ----------------------------------------------       -->
+
+   <div class="saber">
+
+      <img src="./_img/saber.png" class="abrir_modal img_modal saber_fluid"  onclick="abrirModal()">
+
+      <div class="fundo_modal" id="mod">
+          <div class="mod">
+              <img src="./_img/Texto.png" class="saber_fluid">
+              <span class="fechar" onclick="fecharModal()">&times;</span>
+          </div>
+      </div>
+  
+      <text class="texto">
+          <span>Diga não</span><br>
+          <span>ao abandono</span>
+      </text>
+  
+  
+  
+  </div>
 <!-- -----  Footer  -------------------- -->
   <footer class="container" id="social-icons-container">
 
