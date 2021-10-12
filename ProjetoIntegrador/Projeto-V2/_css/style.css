@@ -2,7 +2,7 @@
 /* set-up da página */
 
 body {
-  margin: 100px;
+  margin: 10px;
   padding: 10px;
   background-color: #fefefe;  
 
@@ -24,7 +24,7 @@ body {
 .lema{
   color:red;
   font-family: 'Lato', sans-serif;
-  font-size: clamp( 2vw, 5vw, 7vw);
+  font-size: clamp( 1.5vw, 4vw, 6vw);
   padding: 3%;
   /* line-height: 150%; */
 }
