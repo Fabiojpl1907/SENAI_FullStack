@@ -55,6 +55,11 @@ body {
   text-align: center;
 }
 
+.btn-outline-secondary{
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
 
 /* -----  Footer --------------------*/
 
