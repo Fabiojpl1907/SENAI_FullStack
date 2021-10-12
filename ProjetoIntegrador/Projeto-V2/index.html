@@ -89,35 +89,31 @@
     <div class="container" id="main-image-container">
       <div class="main-image center-image">
           <div class="main-image-info">
-              <h2>Diga não ao Abandono</h2>
-              <p class="secondary-color">Click "Detalhes" para saber mais</p>
-              <button class="btn">Detalhes</button>
-          </div>
+                <h2>Diga não ao Abandono</h2>
+                <p class="secondary-color">Click "Detalhes" para saber mais</p>
+
+                <a href="#" onclick="abrirModal()">Detalhes</a>
+
+                <!-- <div class="fundo_modal" id="mod">
+                    <div class="mod">
+                        <img src="./_img/Texto.png" class="saber_fluid">
+                        <span onclick="fecharModal()">&times;</span>
+                    </div>
+                </div> -->
+          
+            </div>
       </div>
   
     </div>
 
-<!-- ----- Modal ----------------------------------------------       -->
-
-   <div class="saber">
-
-      <img src="./_img/saber.png" class="abrir_modal img_modal saber_fluid"  onclick="abrirModal()">
-
-      <div class="fundo_modal" id="mod">
-          <div class="mod">
-              <img src="./_img/Texto.png" class="saber_fluid">
-              <span class="fechar" onclick="fecharModal()">&times;</span>
-          </div>
+    <!-- ----- Modal ----------------------------------------------       -->
+    <div class="fundo_modal" id="mod">
+      <div class="mod">
+          <img src="./_img/Texto.png" class="saber_fluid">
+          <span onclick="fecharModal()">&times;</span>
       </div>
-  
-      <text class="texto">
-          <span>Diga não</span><br>
-          <span>ao abandono</span>
-      </text>
-  
-  
-  
-  </div>
+    </div>
+
 <!-- -----  Footer  -------------------- -->
   <footer class="container" id="social-icons-container">
 
