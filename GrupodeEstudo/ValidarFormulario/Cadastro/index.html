@@ -1,0 +1,203 @@
+<!-- GE - Validar Formulario -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  
+  <title>Validar</title>
+  <link rel="icon" type="image/png" sizes="20x20"  href="./_media/wifi-10.png">
+
+
+  <!-- Acrescentar bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- Acrescentar chamada para arquivo CSS -->
+  <link rel="stylesheet" type="text/css" href="./_css/style.css"> 
+
+</head>
+  <body onload="entradas()"> 
+
+    <form name="form" id="form" >
+
+      <div id="grade">
+
+        <div class="cabecario">
+          <h2>Validar utilizando JQUERY JSON</h2>
+          <h6>Tecle "Tab" para ir ao proximo campo</h6> 
+        </div>
+
+        <div class="tdp">
+          <h4>Dados Pessoais</h4> 
+        </div>
+
+
+        <div class="dadospessoais">
+          
+          <table>
+
+            <tr>
+              <td><span>Nome :</span></td>
+              <td><input type="text" name="nome" id="nome" placeholder="[max 20 - só letras]" ></td>
+            </tr>
+
+            <tr>
+              <td><span>CPF :</span></td>
+              <td><input type="text" name="cpf" id="cpf" placeholder="[só numeros]"></td>
+            </tr>
+  
+            <tr>
+              <td><span>E-Mail :</span></td>
+              <td><input type="email" name="mail" id="mail"></td>
+            </tr>
+  
+            <tr>
+              <td><span>Data Nascimento :</span></td>
+              <td><input type="date" name="nasc" id="nasc" ></td>
+            </tr>
+  
+            <tr>
+              <td><span>Salário :</span></td>
+              <td><input type="text" name="sal" id="sal" class="dinheiro" ></td>
+            </tr>
+
+            <tr>
+              <td><span>Sexo :</span></td>
+  
+              <td >
+                  <input type="radio" name="sex" id="sex" value="Feminino"/> &nbsp Feminino
+                  <input type="radio" name="sex" id="sex" value="Masculino"/>&nbsp Masculino
+              </td> 
+            </tr>
+  
+            <tr>
+              <td><span>Time</span></td>
+              <td>            
+                <select name="time" id="time" >
+                  <option value="" selected="selected">Selecione...</option>
+                  <option value="opcion1">São Paulo</option>
+                  <option value="opcion2">Palmeiras</option>
+                  <option value="opcion3">Juventus</option>
+                </select>
+              </td>
+            </tr>
+            
+          </table>
+
+        </div>
+  
+        <div class="tpc">
+          <h4>Planos de Assinatura</h4> 
+        </div>
+
+        <div class="planodecanais">
+            
+          <table>
+
+            <tr>
+              <td><span>Planos</span></td>
+              <td>
+                  <input type="radio" name="plano" id="plano" value="85"/>&nbsp Mensal - R$ 85,00<br>
+                  <input type="radio" name="plano" id="plano" value="75"/>&nbsp Quadrimestral - R$ 300,00<br>
+                  <input type="radio" name="plano" id="plano" value="50"/>&nbsp Anual - R$ 600,00
+              </td> 
+            </tr>
+
+            <tr>
+              <td><span for="plano">Canais Inclusos</span><br>
+              <span>no Plano :</span></td>
+  
+              <td >
+                <br><select name="" id=""  >
+                  <option value="" selected="selected">Mensal</option>
+                  <option value="">Noticias</option>
+                  <option value="">Canais Abertos</option>
+                  <option value="">Musica</option>
+                </select>
+  
+                <br><select name="" id=""  >
+                  <option value="" selected="selected">Quadrimestral</option>
+                  <option value="">Noticias</option>
+                  <option value="">Canais Abertos</option>
+                  <option value="">Musica</option>
+                  <option value="">Documentários</option>
+                </select>
+  
+                <br><select name="" id=""  >
+                  <option value="" selected="selected">Anual</option>
+                  <option value="">Noticias</option>
+                  <option value="">Canais Abertos</option>
+                  <option value="">Musica</option>
+                  <option value="">Documentários</option>
+                  <option value="">Filmes</option>
+                </select>
+  
+              </td> 
+            </tr>
+
+            <tr>
+              <td><span >Premier</span></td>
+  
+              <td >
+                  <br><input onchange="total()" type="radio" name="premiun" id="premiun" value="60"/>&nbsp Economico - 12 x R$ 60,00<br>
+                  <input onchange="total()" type="radio" name="premiun" id="premiun" value="80"/>&nbsp Controle - mensal - R$ 80,00<br>
+              </td> 
+            </tr>
+          
+          
+            <tr>
+              <td><br><span>Total Mensal</span></td>
+              <td id="total"></td> 
+            </tr>
+
+
+            <tr>
+              <td><br><span>Usuário</span></td>
+              <td><input type="text" name="user" id="user" maxlength="7" minlength="7"></td>
+            </tr>
+          
+            
+            <tr>
+              <td><span>Senha</span></td>
+              <td><input type="password" name="pwd" id="pwd" maxlength="7" minlength="7"></td>
+            </tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+          
+          
+          </table>
+
+        </div>
+  
+        <div class="hoje">
+          <p id="datahoje"></p>
+        </div>
+  
+        <div class="validar">
+          <button type="button" class="botao" onclick="validar_tudo()">Validar Formulário</button>
+        </div>
+  
+        <div class="enviar">
+          <button type="submit" id="assinar"   disabled class="botao" >Assinar Plano</button>
+        </div>
+  
+        <div class="tempo">
+          <span>Voce esta conosco a...</span><br>
+          <span id="hour"></span> h  : <span id="minute"></span> min  : <span id="second"></span><span> seg  </span>
+        </div>
+      
+      </div>
+    
+    </form>
+
+  </body>
+  <!-- meu arquivo personalizado  -->
+  <script src="_javascript/validar.js"></script>
+
+<!-- carregam a biblioteca jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+</html>

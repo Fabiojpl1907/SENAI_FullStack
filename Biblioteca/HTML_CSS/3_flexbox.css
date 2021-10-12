@@ -1,0 +1,86 @@
+/* sites referencias : 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#examples 
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+*/
+
+body{
+    padding-bottom: 500px;;
+}
+
+
+.container{
+    /* estilizada  */
+    background-color: rgb(146, 146, 146);
+    border: 2px solid red;
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+
+    display:flex; /*por padrão coloca em linha */
+    
+    /* Alinhamento horizontal */
+    justify-content: center;  /* centraliza elemntos na div pai */
+    justify-content: space-around;  /* distibui os elementos na div pai com margens*/
+    justify-content: space-between;  /* distibui os elementos na div pai sem  margens*/
+
+    /* Alinhamento vertical */
+    align-items: center;
+    flex-wrap: wrap;   /* resitribui elemntso entre linhas e colunas para manter o tamanho solicitado */ 
+}
+
+.item{
+
+     /* estilizada  */
+    background-color: rgb(176, 227, 252);
+    border: 2px solid rgb(47, 0, 255);
+    width: 100px;
+    height: 100px;
+}
+
+.box{
+
+    /* estilizada  */
+    /* flex vai iniciar com o minimo de largura que caiba o texto  */
+   background-color: rgb(176, 227, 252);
+   border: 2px solid rgb(47, 0, 255);
+   height: 100px;
+   
+   /* avisar que quero como base 30 px de largura */
+   /* sera sempre tentado ao maximo mater a propriedade basis*/
+   flex-basis: 30px;  
+
+   /* usar um flex so com Grow shirnk basis 
+   flex:  1 1 50px:*/
+}
+
+#item-1{
+    /* controla como o elento cresce em porpoção  aos outros */
+    flex-grow: 2;
+}
+
+#item-2 , #item-3{
+    /* controla como o elento cresce em porpoção  aos outros */
+    flex-grow: 1;
+    /* flex-shrink: 2; controla a diminuição */
+}
+
+
+#item-2{
+    flex-basis: 100px;
+
+    /* 1 e 03 vao respitar o grow , 2 respita o basis*/
+
+}
+
+/* alterar a ordem de apresentação dos elementos */
+#item-1{
+    order: 3;
+}
+
+#item-2{
+    order: 1;
+}
+
+#item-3{
+    order: 2;
+}

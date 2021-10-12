@@ -1,0 +1,238 @@
+<!-- PI - Formulário de Cadastro -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <title>Cadastro</title>
+    <link rel="icon" type="image/png" sizes="20X20"  href="./_img/Cat.png">
+
+
+     <!-- Acrescentar chamada para arquivo CSS -->
+     <link rel="stylesheet" type="text/css" href="./_css/style.css"> 
+     <link rel="stylesheet" type="text/css" href="./_css/modal.css"> 
+
+     <!-- Fontes Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+    </head>
+
+
+<body>
+  <form name="form_c" id="form_c" >
+    
+
+    <section class="container"> 
+
+        <div class="grid_paginas"> 
+
+            <div class="box logo-paginas">
+                <img src="./_img/Abriga_Gatos.png" class="img-fluid_logo">
+            </div>
+        
+            <!-- menu pagina  -->
+            <div class="box home">
+                <a href="./index.html" target="blank"><img src="./_img/Cat.png" class="img-fluid"></a>
+                <p><strong>Home</strong></p>
+            </div>
+
+            <div class="box titulo-paginas">
+                <p>Cadastro</p>
+            </div>
+
+
+             <!-- formulário de contato  -->
+
+  <!-- Dados colidos ------------------------------------------------------------- -->
+
+        <div class="form_c">
+          
+            <table>
+                <tr>
+                    <td><h4>Dados Pessoais</h4><br></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="nome">Nome :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nome" id="nome" class="entrada" placeholder="somente letras" > 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="cpf">CPF :</label> 
+                    </td>
+                    <td>
+                        <input type="text" name="cpf" id="cpf"   class="entrada" placeholder="somente numeros" > 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tel">Telefone :</label> 
+                    </td>
+                    <td>
+                        <input type="tel" name="tel" id="tel"  class="entrada" placeholder="(00) 0000-0000"> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tel">Celular :</label> 
+                    </td>
+                    <td>
+                        <input type="tel" name="cel" id="cel"  class="entrada" placeholder="(00) 00000-0000"> 
+                    </td>
+                </tr>
+
+
+            
+            </table>
+             
+        </div>
+
+        <div class="endereco">
+
+            <table>
+                <tr>
+                    <td><h4>Endereço</h4><br></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Cep:</label>
+                    <td>               
+                       <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" class="entrada">
+                      <span class="pequeno">&nbsp&nbsp < tecle "TAB" para pesquisar > </tecle></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Rua:</label>
+                    </td>
+                    <td>
+                        <input name="rua" type="text" id="rua" size="60" class="entrada" disabled>                   
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <label>Numero:</label>
+                    </td>
+                    <td>
+                        <input name="num" type="text" id="num" size="5" class="entrada">                   
+                    </td>
+                </tr>   
+                
+                
+                <tr>
+                    <td>
+                        <label>Complemento:</label>
+                    </td>
+                    <td>
+                        <input name="comp" type="text" id="comp" size="20" class="entrada">                   
+                    </td>
+                </tr>   
+                     
+                
+                
+                
+                <tr>
+                    <td>
+                        <label>Bairro:<label>
+                    </td>
+                    <td>
+                        <input name="bairro" type="text" id="bairro" size="40" class="entrada" disabled>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label>Cidade:</label>
+                    </td>
+                    <td>
+                        <input name="cidade" type="text" id="cidade" size="40" class="entrada" disabled>                       
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Estado:</label>
+                    </td>
+                    <td>
+                        <input name="uf" type="text" id="uf" size="2" class="entrada" disabled>     
+                    </td>
+                </tr>
+
+                
+            </table>
+
+        </div>
+
+
+
+
+
+<!-- Botes de validar / enviar------------------------------------------------------------------------- -->
+
+        <div class="validar_c">
+            <button type="button" class="botao" onclick="return validar_tudo();">Validar Formulário</button>
+        </div>
+
+        <div class="enviar_c">
+            <button type="submit" id="assinar"   disabled class="botao" onclick="encerra()">Cadastrar</button>
+        </div>
+
+<!-- ------------------------------------------------------------------------- -->
+
+            <!-- Rodape -->
+            <div class="box rodape-pagina">
+                <footer>
+                    <p>Copyright &copy; 2021 AbrigaGatos<br>
+                        <a  href="./_media/PolíticadePrivacidade.pdf" target="blank">Politica de Privacidade</a>
+                    </p>
+                </footer>
+            </div>
+        
+        
+        
+        
+        </div>
+   
+
+    </section>
+
+
+  </form>
+
+</body>
+
+<script src="_javascript/validar.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+  
+
+
+
+</html>

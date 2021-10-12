@@ -1,0 +1,102 @@
+
+
+body { 
+    /* Inserindo imagem de fundo  */
+    background-image: url(../_imagens/background.png);
+    background-size:100%;
+    background-size: cover;
+
+}  
+
+#titulo{
+    color: rgb(250, 248, 248);
+    font-family: sans-serif;
+    font-size: 300%;
+    font-weight: 500;
+    margin-bottom: 0ch;
+    margin-left: 25px;
+    text-align: left;
+
+}
+#chamada{
+ font-family: sans-serif;
+ font-weight: 300;
+ margin-top: 0ch;
+ margin-left: 25px;
+ margin-bottom: 50px;
+ text-align: left;
+
+}
+
+#T1{
+    /* border: 1px solid rgb(255, 255, 255); */
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: #ffffff;
+    color: white;
+}
+
+
+
+tr, td, th {
+    /* border: 1px solid rgb(255, 255, 255); */
+
+    border-bottom: 1px solid #ddd;}
+
+td:first-child { width: 100px;}
+
+.banner{
+    width: 400px;
+    height: 100px;
+}
+#texto{
+
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-left: 20px;
+    color: rgb(252, 224, 189);
+    text-align: justify;
+    line-height: 37px;
+
+
+    width: 295px;
+    height: 335px;
+    padding: 15px;
+
+    border-style: dotted;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 1%;
+    
+}
+
+.link{
+    color: #ffffff;
+    margin-left: 10px;
+}
+.icones{
+    width: 75px;
+    height: 75px;
+    margin-left: 15px;
+}
+
+
+footer{
+
+    position: absolute;
+    bottom: 10px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(255, 0, 0);
+    width: 100%;
+    height: 21px;    
+    text-align: center;
+    line-height: 20px;
+    font-family: sans-serif;
+    font-size: 75%;
+}
+
+

@@ -1,0 +1,501 @@
+/* Media Queries 1 ---------------------------------------- */
+ 
+/* :root {
+    /* --screenSize: "extra small"; */
+    --containerSize: auto; 
+    --gutter: 15px;
+  }
+  
+  /* Mobile */
+  /* @media (min-width: 320px) { 
+    :root {
+      /* --screenSize: "small"; */
+      --containerSize: 320px; 
+    }
+  } */
+  
+  /* Tablet */
+  /* @media (min-width: 720px) { 
+    :root {
+      /* --screenSize: "medium"; */
+      --containerSize: 720px; 
+    }
+  } */
+  
+   
+  /* Desktop */
+  /* @media (min-width: 1200px) { 
+    :root {
+      /* --screenSize: "extra large"; */
+      --containerSize: 1200px; 
+    }
+  } */ */
+
+
+/* Media Queries 2 ---------------------------------------- */
+
+@media screen and (max-width: 480px) {
+  body {
+      background: red;
+  }
+}
+
+
+
+
+  /* Body ---------------------------------------- */
+  body {
+    margin: 40px;
+    background-color: #fefefe;  
+  
+  } 
+.marca{
+  width: 150px;
+}
+
+ /* Grid ---------------------------------------- */
+  .container {
+    width: var(--containerSize);
+    display: block;
+    margin: 40px auto;
+    background: linear-gradient(#FEFEFE, rgb(243, 243, 241), rgb(241, 243, 239));
+  }
+
+  
+/* Box fica ativado quando quero ver as divisoes do grid na pagina sendo montada   */
+
+/* .box {
+  background-color: rgb(199, 238, 253);
+  border-radius: 5px;
+}  */
+
+.grid_gatos{
+  display: grid;
+  grid-template-columns: repeat(6,1fr); 
+  grid-template-rows: repeat(1,0.1fr); 
+  grid-template-rows: minmax(1px, auto);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+
+
+/* cabecalho*/ 
+
+
+.lema{
+    grid-row: 1;
+    grid-column: 1/6;
+    color:red;
+    font-family: 'Lato', sans-serif;
+    font-size: clamp( 1vw, 3vw, 5vw);
+    padding: 3%;
+    line-height: 150%;
+    text-align: Left;
+    
+}
+
+/* Serviços */
+
+.saber{
+  margin-left: auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  padding:5%;
+}
+
+.texto{
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 4vw, 5vw);
+  padding: 5% 0 0 15%;
+  line-height: 150%;
+  text-align: center;
+  display: inline-block;
+
+}
+
+/* rodapé*/
+
+.rodape{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: clamp(  0.7vw, 1vw, 1.5vw));
+  padding-top: 1%;
+  border-top: 1px solid rgb(248, 169, 22); 
+  margin-top: 5%; 
+}
+
+/* Pagina em construcao */
+.construir{
+   width:60%;
+   border-radius: 60%;
+   margin-top: 10%;
+   margin-left: auto;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/*Paginas.html*----------------------------------------------------------------------------*/
+
+.grid_paginas{
+  display: grid;
+  grid-template-columns: repeat(7,1fr); 
+  grid-template-rows: repeat(10,0.1fr); 
+  grid-template-rows: minmax(1px, auto);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+
+
+/* cabecalho Paginas*/ 
+
+.logo-paginas{
+    grid-row: 1;
+    grid-column: 1/8;
+    border-bottom: 1px solid rgb(248, 169, 22);  
+   
+  }
+
+.home{
+  grid-row: 1;
+  grid-column: 7;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 1vw, 1vw, 2vw);
+  text-align: center;
+  padding-top: 15%;
+
+}
+
+.home:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+.titulo-paginas{
+  grid-row: 1;
+  grid-column: 3/7;
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 3vw, 5vw);
+  text-align: center;
+  padding-top: 5%;
+  border-left: 1px solid rgb(248, 169, 22); 
+  border-right: 1px solid rgb(248, 169, 22); 
+ 
+}
+
+
+
+/* Página Contatos ------------------------------------------------*/
+
+/* Midias Contatos*/
+
+.whatsapp{
+  grid-row: 2;
+  grid-column: 1/3;
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 1.5vw, 3vw);
+  text-align: center;
+  padding-left: 10%;
+  margin-top: 5%;
+}
+
+.instagram{
+  grid-row: 2;
+  grid-column: 3/5;
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 1.5vw, 3vw);
+  text-align: center;
+  padding-left: 10%;
+  margin-top: 5%;
+}
+
+
+.email{
+  grid-row: 2 ;
+  grid-column: 5/7;
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 1.5vw, 3vw);
+  text-align: center;
+  padding-left: 10%;
+  margin-top: 5%;
+}
+
+
+/* Formulario */
+
+.formulario{
+  grid-row: 3;
+  grid-column: 1/8;
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 3vw, 3vw);
+  text-align: center;
+  padding-top: 1%;
+  border-bottom: 1px solid rgb(248, 169, 22); 
+  border-top: 1px solid rgb(248, 169, 22); 
+  line-height: 70%;
+  margin-bottom: 3%;
+}
+
+.pergunta{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 1vw, 3vw);
+  text-align: center;
+}
+
+.form{
+  grid-row: 4/10;
+  grid-column: 1/5;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 1vw, 1.2vw, 2vw);
+
+}
+
+.campos{
+  grid-row: 4/9;
+  grid-column: 5/8;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 1vw, 1vw, 2vw);
+
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.enviar {
+  width:40%;
+  padding: 10px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: clamp( 1vw, 1.1vw, 2vw);
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.2);
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+
+
+/* Página Parceiros ------------------------------------------------*/
+
+.text-parceiros{
+  grid-row: 4/6;
+  grid-column: 1/4;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 0.5vw, 1.2vw, 3vw);
+  text-align: left;
+  padding: 5% 0 5% 5%;
+  border-radius: 5%;
+  line-height: 70%;
+}
+
+h5{
+  color: darkorange;
+  font-weight: bolder;
+  font-size: clamp( 1vw, 1.2vw, 3vw);
+}
+
+
+.veterinarios{
+  grid-row: 4/6;
+  grid-column: 3/5;
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1.3vw, 2vw);
+  text-align: center;
+  padding: 5% 2% 5% 15%;
+  border-radius: 5%;
+}
+
+.veterinarios:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+.colaboradores{
+  grid-row: 6/8;
+  grid-column: 4/6;
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1.3vw, 2vw);
+  text-align: center;
+  padding: 5% 2% 5% 15%;
+  border-radius: 5%;
+}
+
+.colaboradores:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+
+.petshop{
+  grid-row: 4/6;
+  grid-column: 5/7;
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1.3vw, 2vw);
+  text-align: center;
+  padding: 5% 2% 5% 15%;
+  border-radius: 5%;
+}
+
+.petshop:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+.cadastro{
+  grid-row: 6/8;
+  grid-column: 6/8;
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1.3vw, 2vw);
+  text-align: center;
+  padding: 5% 2% 5% 15%;
+  border-radius: 5%;
+}
+.modal-body{
+  text-align: left;
+}
+.cadastro:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+
+/* Página Doacoes ------------------------------------------------*/
+
+.dinheiro{
+  grid-row: 4/6;
+  grid-column: 3/6;
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1.3vw, 2vw);
+  text-align: center;
+  padding: auto;
+  margin-left:10%;
+}
+.dinheiro:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+
+
+.medicamento{
+  grid-row: 4/6;
+  grid-column: 5/8;
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1.3vw, 2vw);
+  text-align: center;
+  padding:auto;
+  margin-left:10%;
+}
+.medicamento:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+
+.alimento{
+  grid-row: 7/9;
+  grid-column: 4/7;
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1.3vw, 2vw);
+  text-align: center;
+  padding: auto;
+}
+.alimento:hover{ 
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.5vw, 4vw);
+}
+
+
+.text-colabora{
+  grid-row: 9;
+  grid-column: 3/8;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 1vw,2vw, 3vw);
+  text-align: center;
+}
+
+
+.text-transp{
+  grid-row: 6/9;
+  grid-column: 1/3;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 0.5vw, 1.2vw, 2vw);
+  text-align: left;
+  padding: 5% 0 7% 7%;
+  border-radius: 5%;
+  background-color: blanchedalmond;
+  line-height: 70%;
+
+}
+
+.transparencia{
+  font-family: sans-serif;
+  font-size: clamp( 1vw, 1vw, 2vw);
+  text-align: center;
+}
+.transparencia:hover{
+  color: #900;
+  transition:350px;
+  font-size: clamp( 1vw, 1.1vw, 4vw);
+}
+
+
+
+/* rodapé paginas  ------------------------------------------------*/
+
+.rodape-pagina{
+  grid-row: 10;
+  grid-column: 1/8;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: clamp(  0.7vw, 1vw, 1.5vw));
+  padding-top: 1%;
+  border-top: 1px solid rgb(248, 169, 22); 
+  margin-top: 5%; 
+}
+
+/* Imagens */
+
+.img-fluid{
+  Width: 30%;
+}
+
+.saber_fluid{
+  Width: 40%;
+}
+
+
+.img-fluid_logo{
+  Width: 15% ;
+}
+
+.img-fluid-par{
+  Width: 60%;
+}
+

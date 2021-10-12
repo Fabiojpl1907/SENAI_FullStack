@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <title>Contato</title>
+    <link rel="icon" type="image/png" sizes="20X20"  href="./_img/Cat.png">
+
+    <!-- Acrescentar bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+     <!-- Acrescentar chamada para arquivo CSS -->
+     <link rel="stylesheet" type="text/css" href="./_css/style.css"> 
+     <link rel="stylesheet" type="text/css" href="./_css/modal.css"> 
+
+     <!-- Fontes Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+    </head>
+
+
+<body>
+    
+
+    <section class="container"> 
+
+        <div class="grid_paginas"> 
+
+            <div class="box logo-paginas">
+                <img src="./_img/Abriga_Gatos.png" class="img-fluid_logo">
+            </div>
+        
+            <!-- menu pagina  -->
+            <div class="box home">
+                <a href="./index.html" target="blank"><img src="./_img/Cat.png" class="img-fluid"></a>
+                <p><strong>Home</strong></p>
+            </div>
+
+            <div class="box titulo-paginas">
+                <p>Contatos</p>
+            </div>
+
+
+            <!-- midias de contato  -->
+            <div class="box whatsapp">
+                <img src="./_img/whatsapp.png" class="img-fluid_logo">
+                <p>(11) 9.9999-9999</p>
+            </div>
+
+            <div class="box instagram">
+                <img src="./_img/Instagram.png" class="img-fluid_logo">
+                <p>@abrigagatos</p>
+            </div>
+
+
+            <div class="box email">
+                <img src="./_img/Email.png" class="img-fluid_logo">
+                <p>abrigo@abriagatos.org.br</p>
+            </div>     
+
+             <!-- formulário de contato  -->
+
+             <div class="box formulario">
+                <Span>Formulário</Span><br>
+                <span class="pergunta">Nos envie suas perguntas.</span>
+                <span class="pergunta">&nbsp &nbsp Em breve retornamos</span>
+            </div>
+   
+            <div class="box form">
+
+                <form>
+                    <label for="nomesobrenome">Nome : </label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
+    
+                    <br><label for="email">Email : </label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+    
+                    <br><label for="telefone">Telefone : </label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+    
+                    <br><label for="mensagem">Mensagem</label><br>
+                    <textarea cols="80" rows="5" id="mensagem" class="input-padrao" required placeholder="Digite aqui sua duvida, sugestão ou reclamação"></textarea>
+    
+                </form>
+    
+            </div>
+
+
+            <div class="box campos">
+
+                <form>
+
+                    <fieldset>
+                        <legend>Como prefere o nosso contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                        
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                    </fieldset>
+    
+                    <br><fieldset>
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+    
+                    <br><br><input type="submit" value="Enviar formulário" class="enviar">
+
+                    <br><br><a  href="./_media/PolíticadePrivacidade.pdf" target="blank">Click aqui e conheça nossa Politica de Privacidade</a>
+                    
+                    <br><br><br><br><br><label class="checkbox"><input type="checkbox" > &nbsp Gostaria de receber nossas novidades por email?</label>
+    
+ 
+                </form>
+    
+            </div>
+
+
+            <!-- Rodape -->
+            <div class="box rodape-pagina">
+                <footer>
+                    <p>Copyright &copy; 2021 AbrigaGatos<br>
+                        <a  href="./_media/PolíticadePrivacidade.pdf" target="blank">Politica de Privacidade</a>
+                    </p>
+                </footer>
+            </div>
+        
+        
+        
+        
+        </div>
+   
+
+    </section>
+
+
+
+</body>
+
+
+<script src="./_javascript/modal.js"> </script>
+
+
+<!-- Carregando bibliotecas para o bootstrap -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+</html>

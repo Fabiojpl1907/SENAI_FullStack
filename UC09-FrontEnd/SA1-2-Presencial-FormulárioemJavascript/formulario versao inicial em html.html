@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Formulario</title>
+    <!-- <link rel="icon" type="image/png" sizes="20X20"  href="./_img/tz.png"> -->
+
+
+    <!-- Acrescentar bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+     <!-- Acrescentar chamada para arquivo CSS -->
+     <link rel="stylesheet" type="text/css" href="./_css/style.css"> 
+
+     <!-- Acrescentar fonts google -->
+     <!-- Fontes Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+
+
+    </head>
+
+
+<body >
+
+
+<section class="wrapper">
+
+    <header class="header marca">
+        <p>i-Esportes</p>
+    </header>
+
+
+    <div class="main">
+
+      <span class="pergunta">Formulário de Inscrição</span><br><br>
+
+      <label>Nome : &nbsp &nbsp</label><input id="name" type="text" maxlength="80" class="limite">
+      <label>Apelido : &nbsp &nbsp</label><input id="nickname" type="text" maxlength="20">
+    
+      <br><br><label>Data de Nascimento : &nbsp </label><input id="day" type="date" maxlength="10" class="limite">    
+      <!-- <label>Dia : &nbsp</label><input id="day" type="datetime" maxlength="2" class="limite"> -->
+      <!-- <label>&nbsp &nbsp Mês : &nbsp </label><input id="month" type="text" maxlength="2">
+      <label>&nbsp &nbsp Ano : &nbsp</label><input id="year" type="text" maxlength="4"> -->
+    
+      <br><br><label>CPF : &nbsp &nbsp</label><input id="cpf" type="text" maxlength="14">
+
+      <br><div class="check linha">
+        <br><br><label>Esportes de interesse</label><br>
+        <input type="checkbox" name="sport" id="1" >&nbsp Futebol<br>
+        <input type="checkbox" name="sport" id="2">&nbsp Vôlei<br>
+        <input type="checkbox" name="sport" id="3">&nbsp Basquete<br>
+        <input type="checkbox" name="sport" id="4">&nbsp Futsal<br>
+        <input type="checkbox" name="sport" id="5">&nbsp Automobilismo<br>
+        <input type="checkbox" name="sport" id="6">&nbsp Artes Marciais<br>
+        <input type="checkbox" name="sport" id="7">&nbsp Natação<br>
+      </div>
+
+      <div class="linha">
+      <br><br><label>Time do coração : &nbsp</label>
+      <select id="team_id" maxlength="20">
+        <option id="1">São Paulo</option>
+        <option id="2">Palmeiras</option>
+        <option id="100">Juventus</option>
+      </select>
+    </div>
+ 
+
+    </div>
+
+    <aside class="aside aside-1">
+        <p></p><br>
+        <p></p>
+        <div id="fotos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./_imagens/1.png" >
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./_imagens/2.png" >
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./_imagens/3.png" >
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./_imagens/4.png" >
+              </div>
+
+            </div>
+          </div>
+    </aside>
+
+    <aside class="aside aside-2">
+    
+    <p><br>Venha <br>ser <br>nosso <br>parceiro</p>
+    </aside>
+
+    <footer class="footer">
+        <span>Copyright &copy; 2021 i-Esportes<br>
+            <a href="./index.html" target="blank">Página promoção</a>
+         </span>
+    </footer>
+
+</section>
+
+
+</body>
+
+<!-- Carregando javascripts -->
+<script src="./_javascript/esporte.js"> </script>
+<script charset="ISO-8859-1" src="form_tools.js"></script>
+<script charset="ISO-8859-1" src="form1.js"></script>
+    
+
+<!-- Carregando bibliotecas para o bootstrap -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+</html>

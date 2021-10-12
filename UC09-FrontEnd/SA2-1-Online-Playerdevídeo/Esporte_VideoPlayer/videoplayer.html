@@ -1,0 +1,136 @@
+<!-- Video Player em Javascript -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Vídeo</title>
+    <link rel="icon" type="image/png" sizes="20x20"  href="./_imagens/i.png">
+
+
+    <!-- Acrescentar bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+     <!-- Acrescentar chamada para arquivo CSS -->
+     <link rel="stylesheet" type="text/css" href="./_css/style.css"> 
+
+     <!-- Acrescentar fonts google -->
+     <!-- Fontes Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+
+    </head>
+
+
+<body  >
+
+
+<section class="wrapper">
+
+    <header class="header marca">
+        <p>i-Esportes</p>
+    </header>
+
+
+    <div class="main">
+
+      <span class="pergunta">Vídeos, &nbsp Esportes & Ação</span><br><br>
+
+      <section name="videos">
+        
+        <video id="video1" width="480" height="270px" poster="./_imagens/Avatar.png">
+            <source src="./_media/Pexels Videos 1585618.mp4" type="video/mp4">
+        </video><br><br>
+
+        <div name="dimenssao" class="btn-group-vertical dim" role="group">
+          <span>Dimensões</span>
+          <button type="button" class="btn btn-info" onclick="changeSize(240,135)">-</button>
+          <button type="button" class="btn btn-info"onclick="changeSize(480,270)">Normal</button>
+          <button type="button" class="btn btn-info" onclick="changeSize(720,405)">+</button>
+          <button onclick="fullScreen()" class="btn btn-info">Fullscreen</button>
+     
+        </div>
+        
+        <div name="tocarpausar" class="btn-group-vertical toca" role="group">
+          <span>Tocar/Pausar</span>  
+          <button type="button" id="play_pause" class="btn btn-info" onclick="play_pause()">PLAY</button>
+        </div>     
+        
+        <div name="volume" class="btn-group-vertical vol" role="group">
+          <span>Volume</span>  
+          <button type="button" class="btn btn-info" onclick="aumentar_volume()">+</button>
+          <button type="button" class="btn btn-info" onclick="diminir_volume()">-</button> 
+        </div>  
+
+        <div name="silenciar" class="btn-group-vertical silencio" role="group">
+          <span>Mute/Som</span>  
+          <button type="button" id="mute" class="btn btn-info" onclick="silenciar()">MUTE</button>
+        </div> 
+      
+      </section>
+ 
+ 
+    </div>   <!-- div main -->
+
+    <aside class="aside aside-1">
+        <p></p><br>
+        <p></p>
+        <div id="fotos" >
+          <img class="d-block w-100" src="./_imagens/1.png" >
+        </div>
+    </aside>
+
+    <aside class="aside aside-2">
+    
+      <p id="t_esquerda"><br>Venha <br>ser <br>nosso <br>parceiro</p>
+      <br>
+      <a href="./formulario.html" target="blank" id="i_esquerda">Formulário de Inscrição</a>
+
+    </aside>
+
+    <footer class="footer">
+        <span>Copyright &copy; 2021 i-Esportes<br>
+            <a href="./index.html" target="blank">Home</a>
+         </span>
+    </footer>
+
+</section>
+
+
+</body>
+
+<!-- Carregando javascripts -->
+<script src="./_javascript/esporte.js"> </script>
+<script  src="./_javascript/form_tools.js"></script>
+<script  src="./_javascript/form1.js"></script>
+<script  src="./_javascript/player.js"></script>
+    
+
+<!-- Carregando bibliotecas para o bootstrap -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+</html>

@@ -1,0 +1,18 @@
+.chave:before{
+	content: "[ ";
+}
+.chave:after{
+	content: " ]";
+}
+
+/* site referencia para codigos ASCII : https://www.htmlsymbols.xyz/star-symbols */
+/* Espaço em branco : \00a0 */
+
+.ascii:before{
+	content: "\2722 \00a0";
+	color: blue;
+}
+.ascii:after{
+	content: "\00a0 \2722";
+	color: blue;
+}

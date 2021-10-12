@@ -1,0 +1,128 @@
+body{
+/* margin-left: 5%; */
+margin-top: 3%;
+background-color: rgba(234,244,244);
+
+}
+
+.viagens{
+    margin-left: 2%;
+    color: rgba(62,39,104);
+    font-family: 'Raleway', sans-serif;
+    /* criando texto responsivo */
+    font-size: clamp( 1vw, 4vw, 5vw)
+}
+
+
+.zinha{
+    color: rgba(62,39,104);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: clamp(2vw,5vw,7vw);
+}
+
+
+.tia{
+    color: rgba(62,39,104);
+    margin-left: 2%;
+    margin-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: clamp( 1vw, 3vw, 4vw);
+}
+
+.imgzinha{
+    width: 13%;  
+    position: fixed;
+    left: 75%;
+    top: 19%;
+}
+
+.promocao{
+    /* background-color: aqua; */
+    position: fixed;
+    text-align: center;
+    left: 40%;
+    top:50%; 
+}
+
+#texto{
+    font-family: sans-serif;
+    font-size: clamp( 1vw, 2vw, 3vw);
+    color: rgb(88,59,73);
+}
+
+.btn-sm{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: clamp( 1vw, 1.1vw, 1.5vw);
+}
+
+.imgzinha_d{
+    width: 13%;  
+    position: fixed;
+    right: 81%;
+    bottom: 9%;
+}
+
+.menu{
+    position: fixed;
+    top: 9%;
+    right: 10%;
+}
+
+.pacotes{
+    color: rgba(255,0,0);
+    position: fixed;
+    left: 3%;
+    top: 21%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: clamp( 1vw, 3vw, 4vw);
+    line-height:57%
+
+}
+
+
+.btn-outline-success{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    /* padding: 10px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: clamp( 0.9vw, 1vw, 1.5vw);
+}
+
+footer{
+
+    position: absolute;
+    bottom: 10px;
+    background-color: rgb(255,182,182);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 21px;    
+    text-align: center;
+    line-height: 20px;
+    font-family: sans-serif;
+    font-size: clamp( 1.1vw, 1.1vw, 1.1vw);
+}
+
+.tabela_promo{
+    width: 65%;
+    background-color: rgb(250, 221, 221);
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    font-family: sans-serif;
+    font-size: clamp( .5vw, 1vw, 1.5vw);
+
+}
+
+.foto{
+    width: 70%;
+    border-radius: 20%;    
+}
+
+.btn-success{
+    margin-left: 10%;
+    margin-top: 25%;
+    /* padding: 10px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: clamp( 0.9vw, 1vw, 1.5vw);
+}
+

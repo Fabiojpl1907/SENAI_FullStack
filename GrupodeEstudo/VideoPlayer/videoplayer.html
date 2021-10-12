@@ -1,0 +1,90 @@
+<!-- Video Player em Javascript -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Vídeo</title>
+
+    <!-- Acrescentar bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+     <!-- Acrescentar chamada para arquivo CSS -->
+     <link rel="stylesheet" type="text/css" href="./_css/style.css"> 
+
+    </head>
+
+
+<body  >
+
+    <header >
+        <h1>Vídeo Player em Javascript</h1>
+    </header>
+
+
+      <span class="pergunta">Vídeos,  Esportes & Ação</span><br><br>
+
+    <section name="videos">
+        
+
+      <video id="video1" width="480" height="270px" poster="_imagens/poster.png">
+
+          <source src="./_media/video.mp4" type="video/mp4">
+
+      </video><br><br>
+      
+      <div name="botoesdecontrole" class="btn-group" role="group" aria-label="Exemplo básico">
+        
+          <!-- <span>Dimensões</span> -->
+          <button type="button"  class="btn btn-outline-info btn-sm"onclick="changeSize(240,135)">Dim -</button>
+          <button type="button"  class="btn btn-outline-info btn-sm"onclick="changeSize(480,270)">Normal</button>
+          <button type="button"  class="btn btn-outline-info btn-sm"onclick="changeSize(720,405)">Dim +</button>
+          <button type="button"  class="btn btn-outline-info btn-sm"onclick="telacheia()">Fullscreen</button>
+
+
+          <!-- <span>Tocar/Pausar</span>   -->
+          <button type="button" id="play_pause"  class="btn btn-outline-info btn-sm"onclick="play_pause()">PLAY</button>
+
+          <!-- <span>Volume</span>   -->
+          <button type="button"   class="btn btn-outline-info btn-sm"onclick="aumentar_volume()">Vol +</button>
+          <button type="button"   class="btn btn-outline-info btn-sm"onclick="diminir_volume()">Vol -</button> 
+
+          <!-- <span>Mute/Som</span> -->
+          <button type="button" id="mute"   class="btn btn-outline-info btn-sm"onclick="silenciar()">MUTE</button>        
+      
+      </div>
+
+    </section>
+
+    <footer >
+      <br><br>  
+      <span>Grupo de Estudo &copy;<br>
+         </span>
+    </footer>
+
+
+
+
+</body>
+    <script  src="./_javascript/player.js"></script>
+
+    
+
+    <!-- Carregando bibliotecas para o bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+</html>

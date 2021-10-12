@@ -1,0 +1,9 @@
+/* criar background transparente */
+/* Os valores de cores RGBA são uma extensão dos valores de cores RGB com um canal alfa 
+  - que especifica a opacidade de uma cor. */
+
+/* completamente transparente  */
+  background: rgba(255,255,255,0.0);
+
+  /* controlando o nivel de transparencia no canal alfa */
+  background: rgba(255,255,255,0.4);
