@@ -4,8 +4,7 @@
 body {
   margin: 10px;
   padding: 10px;
-  background-color: #fefefe;  
-
+  background-color: #fefefe;   
 } 
 
 .secondary-color{
@@ -81,4 +80,14 @@ footer i{
 /* mudar cor dos icones rede sociais*/
 a:hover i{
 color: #c1b696;
+}
+
+
+/* ----- em construção ------------------------- */
+.img-construcao{
+  height: 500px;
+  background-image: url('../_img/construcao.jpg');
+  margin-bottom: 30px;
+  border-radius: 20px;
+  position: relative;
 }
