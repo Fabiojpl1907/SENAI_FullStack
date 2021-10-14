@@ -26,8 +26,14 @@ body {
   font-size: clamp(1rem, 1vw, 2rem);
   text-align: left;
 }
+
+.texto-secundario{
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(0.7rem, 0.7vw, 1rem);
+  text-align: left;
+}
 .quadro-bege{
-  border-radius: 5%;
+  border-radius: 2%;
   background-color: blanchedalmond;
 }
 
@@ -125,14 +131,17 @@ color: #c1b696;
 /* ----- Doação:doc de Transparencia ------------------------- */
 .transparencia, #cor-link{
   font-family: 'Raleway', sans-serif;
-  font-size: clamp(1rem, 1vw, 2rem);
-  text-align: right;
+  font-size: clamp(0.7rem, 0.7vw, 1rem);
+  text-align: center;
   color: rgb(107, 107, 107);
 }
 .transparencia:hover, #cor-link:hover{
   color: #900;
 }
 
+.bi-file-earmark-text{
+  font-size: clamp(3rem, 3vw, 6rem);
+}
 
 /* --- para teste de layout --------------------------------- */
 /* .row{
