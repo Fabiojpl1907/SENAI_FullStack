@@ -1,156 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
-    <title>AbrigaGatos</title>
-    <link rel="icon" type="image/png" sizes="20X20"  href="./_img/Cat.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!-- Acrescentar bootstrap CSS -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>AbrigaGatos</title>
+  <link rel="icon" type="image/png" sizes="20X20" href="./_img/Cat.png">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Acrescentar bootstrap CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
 
-     <!-- Acrescentar chamada para arquivo CSS -->
-     <link rel="stylesheet" type="text/css" href="./_css/style.css"> 
-     <link rel="stylesheet" type="text/css" href="./_css/modal.css"> 
+  <!-- Acrescentar chamada para arquivo CSS -->
+  <link rel="stylesheet" type="text/css" href="./_css/style.css">
+  <link rel="stylesheet" type="text/css" href="./_css/modal.css">
 
-     <!-- Fontes Google -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-    </head>
+</head>
 
 
 <body>
-<!------------  Nav bar e lema ---------------------------------------------- -->
-      <div class="container">
-        
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(255, 247, 233)">
-  
-          <div class="container-fluid">
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <a class="navbar-brand" href="#"><img src="./_img/Abriga_Gatos.png" width="130vh"></a>
-            
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-                <li class="nav-item p-2">
-                  <a class="nav-link active" aria-current="page" href="./construcao.html" target="blank">Porque Abrigar</a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="nav-link active" aria-current="page" href="./parceiros.html" target="blank">Parceiros</a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="nav-link active" aria-current="page" href="./doacao.html" target="blank">Doações</a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="nav-link active" aria-current="page" href="./contato.html" target="blank">Contatos</a>
-                </li>
-        
-              </ul>
-              
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
-                <button class="btn btn-outline-warning" type="submit">Pesquisa</button>
-              </form>
-            
-            </div>
-          
-          </div>
-        
-        </nav>
+  <!------------  Nav bar e lema ---------------------------------------------- -->
+  <div class="container">
 
-          <div class="row justify-content-start">
-              <div class="col">
-                  <p class="lema">Gatos em um lar</p>
-              </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(255, 247, 233)">
 
-          </div>
-      </div>
+      <div class="container-fluid">
 
-<!-- ----- Saiba Mais ----------------------------------------------       -->
-    <div class="container" id="main-image-container">
-      <div class="main-image center-image">
-          <div class="main-image-info">
-              <h2>Diga não ao Abandono</h2>    
-              <button class="btn btn-outline-secondary btn-lg" onclick="abrirModal()">Saiba mais...</button>
-          </div>
-      </div>
-    </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- ----- Janela Modal ----------------------------------------------       -->
+        <a class="navbar-brand" href="#"><img src="./_img/Abriga_Gatos.png" width="130vh"></a>
 
-        <div class="fundo_modal" id="mod">
-          <div class="mod container-fluid">
-            <div class="row citacao"> 
-              <texto>
-                “A maioria dos animais abandonados não é resgatada e sofre com fome, 
-                doenças, exposição ao tempo, riscos de atropelamento e traumas que 
-                interferem em seu bem-estar mental e comportamento”
-              </texto>
-              <fonte class="secondary-color">- Dra. Cristiane Pizzutto, presidente CTBEA/CRMV-SP</fonte><br>
-              <br><br>
-              <texto>
-                “O abandono impacta diretamente na vida das pessoas, 
-                pois animais nas ruas causam acidentes de trânsito, 
-                prejudicam o turismo e afetam a saúde pública –  
-                devido às doenças que afetam tanto humanos quanto animais”
-              </texto> 
-              <fonte class="secondary-color">- Dra. Rosangela Gebara, CTBEA/CRMV-SP</fonte>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
-              <br><br>
-              <p>CTBEA: Comissão Técnica de Bem-estar Animal (CTBEA) do CRMV-SP</p>
-            </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <span class="sair" onclick="fecharModal()">X</span>
-          </div>
+            <li class="nav-item p-2">
+              <a class="nav-link active" aria-current="page" href="./construcao.html" target="blank">Porque Abrigar</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link active" aria-current="page" href="./parceiros.html" target="blank">Parceiros</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link active" aria-current="page" href="./doacao.html" target="blank">Doações</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link active" aria-current="page" href="./contato.html" target="blank">Contatos</a>
+            </li>
+
+          </ul>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Pesquisa</button>
+          </form>
+
         </div>
 
-<!-- -----  Footer  -------------------- -->
+      </div>
+
+    </nav>
+
+    <div class="row justify-content-start">
+      <div class="col">
+        <p class="lema">Gatos em um lar</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ----- Saiba Mais ----------------------------------------------       -->
+  <div class="container" id="main-image-container">
+    <div class="main-image center-image">
+      <div class="main-image-info">
+        <h2>Diga não ao Abandono</h2>
+        <button class="btn btn-outline-secondary btn-lg" onclick="abrirModal()">Saiba mais...</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----- Janela Modal ----------------------------------------------       -->
+
+  <div class="fundo_modal" id="mod">
+    <div class="mod container-fluid">
+      <div class="row citacao">
+        <texto>
+          “A maioria dos animais abandonados não é resgatada e sofre com fome,
+          doenças, exposição ao tempo, riscos de atropelamento e traumas que
+          interferem em seu bem-estar mental e comportamento”
+        </texto>
+        <fonte class="secondary-color">- Dra. Cristiane Pizzutto, presidente CTBEA/CRMV-SP</fonte><br>
+        <br><br>
+        <texto>
+          “O abandono impacta diretamente na vida das pessoas,
+          pois animais nas ruas causam acidentes de trânsito,
+          prejudicam o turismo e afetam a saúde pública –
+          devido às doenças que afetam tanto humanos quanto animais”
+        </texto>
+        <fonte class="secondary-color">- Dra. Rosangela Gebara, CTBEA/CRMV-SP</fonte>
+
+        <br><br>
+        <p>CTBEA: Comissão Técnica de Bem-estar Animal (CTBEA) do CRMV-SP</p>
+      </div>
+
+      <span class="sair" onclick="fecharModal()">X</span>
+    </div>
+  </div>
+
+  <!-- -----  Footer  -------------------- -->
   <footer class="container" id="social-icons-container">
 
-    <span class="secondary-color">Nos encontre na redes sociais...</span>
+    <div class="row justify-content-center row-top">
 
-    <div class="row justify-content-center">
-        
-        <div class="col-1">
-            <a href="#"> <i class="bi bi-facebook secondary-color"></i></a>
-        </div>
-    
-        <div class="col-1">
-            <a href="#"> <i class="bi bi-instagram secondary-color"></i></a>
-        </div>
-    
-        <div class="col-1">
-            <a href="#"> <i class="bi bi-twitter secondary-color"></i></a>
-        </div>
+      <span class="secondary-color">Abriga Gatos &copy; 2021. Nos encontre na redes sociais...</span>
+
+      <div class="col-1">
+        <a href="#"> <i class="bi bi-facebook secondary-color"></i></a>
+      </div>
+
+      <div class="col-1">
+        <a href="#"> <i class="bi bi-instagram secondary-color"></i></a>
+      </div>
+
+      <div class="col-1">
+        <a href="#"> <i class="bi bi-twitter secondary-color"></i></a>
+      </div>
     </div>
-    <span class="secondary-color">Abriga Gatos &copy; 2021</span>
   </footer>
 
 </body>
-  <script src="./_javascript/modal.js"> </script>
+<script src="./_javascript/modal.js"> </script>
 
 
-  <!-- Carregando bibliotecas para o bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Carregando bibliotecas para o bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 </html>

@@ -31,7 +31,7 @@ body {
   background-color: blanchedalmond;
 }
 
-.doar{
+.clicar{
   font-family: sans-serif;
   font-size: clamp(1rem, 1vw, 2rem);
   text-align: center;
@@ -39,13 +39,18 @@ body {
   margin-left:10%;
 }
 
-.doar:hover{ 
+.clicar:hover{ 
   color: #900;
   transition:350px;
 }
 
+.row-top{
+  border-top: 2px solid rgb(252, 230, 191);
+  padding-top: 2%;
+}
 
-/* ---lema --------------------------------------------- */
+
+/* ---lema:todas as paginas  --------------------------------------------- */
 .lema{
   color:red;
   font-family: 'Lato', sans-serif;
@@ -54,7 +59,7 @@ body {
   /* line-height: 150%; */
 }
 
-/* ----- banner ------------------------- */
+/* ----- Banner:Home ------------------------- */
 .main-image {
   height: 500px;
   background-image: url('../_img/Cat_Ilustration.png');
@@ -86,11 +91,10 @@ body {
 }
 
 
-/* -----  Footer --------------------*/
+/* ----- Footer:todas as paginas --------------------*/
 
 footer{
   text-align: center;
-  border-top: 1px solid rgb(252, 230, 191);
   height: 200px;
   padding: 15px;
 }
@@ -100,7 +104,7 @@ footer p{
 }
 
 footer i{
-  font-size: 2vw;
+  font-size: clamp(1rem, 1vw, 2rem);
 }
 
 /* mudar cor dos icones rede sociais*/
@@ -109,7 +113,7 @@ color: #c1b696;
 }
 
 
-/* ----- em construção ------------------------- */
+/* ----- Em construção ------------------------- */
 .img-construcao{
   height: 500px;
   background-image: url('../_img/construcao.jpg');
@@ -118,7 +122,7 @@ color: #c1b696;
   position: relative;
 }
 
-/* ----- doc de Transparencia ------------------------- */
+/* ----- Doação:doc de Transparencia ------------------------- */
 .transparencia, #cor-link{
   font-family: 'Raleway', sans-serif;
   font-size: clamp(1rem, 1vw, 2rem);
