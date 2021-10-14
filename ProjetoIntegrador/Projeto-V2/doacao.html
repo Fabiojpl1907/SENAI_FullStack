@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     
-    <title>Doações</title>
+    <title>Doação</title>
     <link rel="icon" type="image/png" sizes="20X20"  href="./_img/Cat.png">
 
     <!-- Acrescentar bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 
 
      <!-- Acrescentar chamada para arquivo CSS -->
@@ -26,153 +30,134 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-
-
-
     </head>
 
 
 <body>
-    
-
-    <section class="container"> 
-
-        <div class="grid_paginas"> 
-
-            <div class="box logo-paginas">
-                <img src="./_img/Abriga_Gatos.png" class="img-fluid_logo">
-            </div>
+<!------------  Nav bar e lema ---------------------------------------------- -->
+      <div class="container">
         
-            <!-- menu pagina  -->
-            <div class="box home">
-                <a href="./index.html" target="blank"><img src="./_img/Cat.png" class="img-fluid"></a>
-                <p><strong>Home</strong></p>
-            </div>
-
-            <div class="box titulo-paginas">
-                <p>Doações</p>
-            </div>
-
-
-            <div class="box text-parceiros">
-
-                <h5><strong>Nos Ajude a ajudar</strong></h5><br>
-                <p>Toda a forma de ajuda sera bem vinda.</p>
-                <p>Entre em contato e combinamos como retirar.</p>
-            </div>
-
- 
-            <div class="box text-colabora">
-                <h5>Click nas imagens e descubra as várias formas de colaborar</h5>
-            </div>
-
-            <div class="box dinheiro">
-                
-                <div class="dropdown">
-                    
-                    <img src="./_img/dinheiro.png" class="img-fluid btn dropdown-toggle" type="button" id="dinheiro" 
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <p>Dinheiro</p>
-
-                    <div class="dropdown-menu" aria-labelledby="dinheiro">
-                      <a class="dropdown-item" href="#">Pix : xxxxxxxx0001xx</a>
-                      <a class="dropdown-item" href="#">C/C Banco 000 c/c 11111-1</a>
-                    </div>
-                  </div>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(255, 247, 233)">
+  
+          <div class="container-fluid">
             
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <a class="navbar-brand" href="#"><img src="./_img/Abriga_Gatos.png" width="130vh"></a>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./construcao.html" target="blank">Porque Abrigar</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./parceiros.html" target="blank">Parceiros</a>
+                </li>
 
-            <div  class="box alimento">
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./contato.html" target="blank">Contatos</a>
+                </li>
 
-                <div class="dropdown">
-                    
-                    <img src="./_img/alimento.png" class="img-fluid btn dropdown-toggle" type="button" id="alimento" 
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <p>Alimentos</p>
-
-                    <div class="dropdown-menu" aria-labelledby="alimento">
-                      <a class="dropdown-item" href="#">Rações</a>
-                      <a class="dropdown-item" href="#">Pastinhas</a>
-                      <a class="dropdown-item" href="#">Grama de Gato</a>
-                    </div>
-                  </div>
-           
-            </div>
-
-            <div  class="box medicamento">
-
-                <div class="dropdown">
-                    
-                    <img src="./_img/Medicine.png" class="img-fluid btn dropdown-toggle" type="button" id="medicamento" 
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <p>Medicamentos</p>
-
-                    <div class="dropdown-menu" aria-labelledby="medicamento">
-                      <a class="dropdown-item" href="#">Medicamento em geral</a>
-                      <a class="dropdown-item" href="#">Vacinas</a>
-                      <a class="dropdown-item" href="#">Vermífugos</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="box text-transp">
-                <h5>Respeito e Transparência</h5><br>
-                <p>Mensalmente publicamos</p>
-                <p>relatório das doações e seu uso.</p>
-                
-                <div class="dropdown transparencia">
-                    
-                    <img src="./_img/contas.png" class="img-fluid btn dropdown-toggle" type="button" id="transparencia" 
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <p>Rel. Mensal</p>
-
-                    <div class="dropdown-menu" aria-labelledby="transparencia">
-                      <a class="dropdown-item" href="./construcao.html">Doações Recebidas</a>
-                      <a class="dropdown-item" href="./construcao.html">Gastos</a>
-                    </div>
-                  </div>
+                <li class="nav-item p-2">
+                  <a class="nav-link active" aria-current="page" href="./index.html" target="blank">Home</a>
+                </li>
+        
+              </ul>
+              
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Pesquisa</button>
+              </form>
             
             </div>
+          
+          </div>
+        
+        </nav>
 
-         
+          <div class="row justify-content-start">
+              <div class="col">
+                  <p class="lema">Doações</p>
+              </div>
 
-            <!-- Rodape -->
-            <div class="box rodape-pagina">
-                <footer>
-                    <p>Copyright &copy; 2021 AbrigaGatos<br>
-                        <a  href="./_media/PolíticadePrivacidade.pdf" target="blank">Politica de Privacidade</a>
-                    </p>
-                </footer>
-            </div>
-        
-        
-        
-        
+          </div>
+      </div>
+
+<!-- -----  Doacao -------------------- -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-4 text-parceiros">
+          <h5>Nos Ajude a ajudar</h5><br>
+          <p>Toda a forma de ajuda sera bem vinda.</p>
+          <p>Entre em contato e combinamos como retirar.</p>
         </div>
-   
 
-    </section>
+        <div class="col-4">2</div>
+        <div class="col-4">3</div>
+      </div>
+      
+      <div class="row">
+        
+        <div class="col-4 text-transp">
+            <h5>Respeito e Transparência</h5><br>
+            <p>Mensalmente publicamos</p>
+            <p>relatório das doações e seu uso.</p>
+
+            <div class="dropdown transparencia">
+              
+              <img src="./_img/contas.png" width="25%" class="btn img-fluid dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></img>
+              <p>Relatório Mensal</p>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Doações Recebidas</a></li>
+                <li><a class="dropdown-item" href="#">Gastos</a></li>
+              </ul>
+            </div>
+        </div>
+        
+        <div class="col-8">5</div>
+
+      </div>
+
+    </div>
 
 
+
+
+<!-- -----  Footer  -------------------- -->
+  <footer class="container" id="social-icons-container">
+
+    <span class="secondary-color">Nos encontre na redes sociais...</span>
+
+    <div class="row justify-content-center">
+        
+        <div class="col-1">
+            <a href="#"> <i class="bi bi-facebook secondary-color"></i></a>
+        </div>
+    
+        <div class="col-1">
+            <a href="#"> <i class="bi bi-instagram secondary-color"></i></a>
+        </div>
+    
+        <div class="col-1">
+            <a href="#"> <i class="bi bi-twitter secondary-color"></i></a>
+        </div>
+    </div>
+    <span class="secondary-color">Abriga Gatos &copy; 2021</span>
+  </footer>
 
 </body>
+  <script src="./_javascript/modal.js"> </script>
 
 
-<script src="./_javascript/modal.js"> </script>
+  <!-- Carregando bibliotecas para o bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-
-<!-- Carregando bibliotecas para o bootstrap -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
-integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-</script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
-integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-</script>
 
 </html>
