@@ -17,6 +17,32 @@ body {
     background-position: center;
 }
 
+.chamadas{
+  color: darkorange;
+}
+
+.textos{
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: justify;
+}
+.quadro-bege{
+  border-radius: 5%;
+  background-color: blanchedalmond;
+}
+
+.doar{
+  font-family: sans-serif;
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: center;
+  padding: auto;
+  margin-left:10%;
+}
+
+.doar:hover{ 
+  color: #900;
+  transition:350px;
+}
 
 
 /* ---lema --------------------------------------------- */
@@ -24,7 +50,7 @@ body {
   color:red;
   font-family: 'Lato', sans-serif;
   font-size: clamp( 1.5vw, 4vw, 6vw);
-  padding: 3%;
+  padding: 3% 0 2% 0;
   /* line-height: 150%; */
 }
 
@@ -64,7 +90,7 @@ body {
 
 footer{
   text-align: center;
-  border-top: 1px solid rgb(253, 238, 211);
+  border-top: 1px solid rgb(252, 230, 191);
   height: 200px;
   padding: 15px;
 }
@@ -91,88 +117,27 @@ color: #c1b696;
   border-radius: 20px;
   position: relative;
 }
-/* ----- Parceiros  ------------------------- */
-.text-parceiros{
+
+/* ----- doc de Transparencia ------------------------- */
+.transparencia, #cor-link{
   font-family: 'Raleway', sans-serif;
   font-size: clamp(1rem, 1vw, 2rem);
-  text-align: left;
+  text-align: right;
+  color: rgb(107, 107, 107);
 }
-h5{
-  color: darkorange;
-  font-weight: bolder;
-  font-size: clamp(1rem, 1vw, 2rem);
-}
-
-
-/* ----- Doações  ------------------------- */
-
-.text-transp{
-  font-family: 'Raleway', sans-serif;
-  font-size: clamp(1rem, 1vw, 2rem);
-  text-align: left;
-  /* padding: 5% 0 7% 7%; */
-  border-radius: 5%;
-  background-color: blanchedalmond;
-  /* line-height: 70%; */
-}
-
-.transparencia{
-  font-family: sans-serif;
-  font-size: clamp(1rem, 1vw, 2rem);
-  text-align: center;
-}
-
-.transparencia:hover{
+.transparencia:hover, #cor-link:hover{
   color: #900;
-  transition:350px;
-}
-
-.dinheiro{
-  font-family: sans-serif;
-  font-size: clamp(1rem, 1vw, 2rem);
-  text-align: center;
-  padding: auto;
-  margin-left:10%;
-}
-.dinheiro:hover{ 
-  color: #900;
-  transition:350px;
-}
-
-.medicamento{
-  font-family: sans-serif;
-  font-size: clamp(1rem, 1vw, 2rem);
-  text-align: center;
-  padding:auto;
-  margin-left:10%;
-}
-.medicamento:hover{ 
-  color: #900;
-  transition:350px;
 }
 
 
-.alimento{
-  font-family: sans-serif;
-  font-size: clamp(1rem, 1vw, 2rem);
-  text-align: center;
-  padding: auto;
-}
-.alimento:hover{ 
-  color: #900;
-  transition:350px;
-}
-
-
-
-
-
-
-/* --- para teste de layout  */
+/* --- para teste de layout --------------------------------- */
 /* .row{
-  background-color: aqua;
-} */
+  background-color: aqua; 
+  border-top: 1px solid rgb(252, 230, 191);
+  padding-top: 2%;
+}  */
 
-/* .col-3, .col-4, .col-6, .col-8, .col-9{
-  border: 1px solid black;
+/* .container, .col-3, .col-4, .col-6, .col-8, .col-9,
+.col-md-4, .col-12, .col-md-8{
+  border: 1px solid red;
 } */
