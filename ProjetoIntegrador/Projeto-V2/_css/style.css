@@ -49,6 +49,27 @@ body {
   border-radius: 70px;
 }
 
+.clicar-nav{
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: center;
+}
+
+.clicar-nav:hover{ 
+  /* border-bottom: 3px dashed darkorange; */
+  text-decoration: underline;
+  text-decoration-color: darkorange ;
+  text-decoration-style: solid;
+}
+
+
+
+
+
+
+
+
+
 .row-top{
   border-top: 2px solid rgb(252, 230, 191);
   padding-top: 2%;
