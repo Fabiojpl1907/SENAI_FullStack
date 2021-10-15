@@ -45,7 +45,8 @@ body {
 
 .clicar:hover{ 
   color: darkorange;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  border: 1px dashed darkorange;
+  border-radius: 70px;
 }
 
 .row-top{
@@ -135,8 +136,12 @@ color: #c1b696;
   color: rgb(107, 107, 107);
 }
 .transparencia:hover, #cor-link:hover{
-  color: rgb(112, 0, 0);
- 
+  color: darkorange;
+  border: 1px dashed darkorange;
+  border-radius: 70px;
+}
+.icone{
+  text-align: center;
 }
 
 .bi-file-earmark-text{
