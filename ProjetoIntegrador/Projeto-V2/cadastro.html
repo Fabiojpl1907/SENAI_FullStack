@@ -97,126 +97,52 @@
         <div class="row mb-4 row-top justify-content-center" id="linha1">
 
             <div class="col-12 col-md-4" id="Elemento_1">
-                <table>
-                    <tr>
-                        <td><h4 class="chamadas">Dados Pessoais</h4><br></td>
-                        <td></td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label for="nome">Nome :</label>
-                        </td>
-                        <td>
-                            <input type="text" name="nome" id="nome" class="entrada" placeholder="somente letras" > 
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label for="cpf">CPF :</label> 
-                        </td>
-                        <td>
-                            <input type="text" name="cpf" id="cpf"   class="entrada" placeholder="somente numeros" > 
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label for="tel">Telefone :</label> 
-                        </td>
-                        <td>
-                            <input type="tel" name="tel" id="tel"  class="entrada" placeholder="(00) 0000-0000"> 
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label for="tel">Celular :</label> 
-                        </td>
-                        <td>
-                            <input type="tel" name="cel" id="cel"  class="entrada" placeholder="(00) 00000-0000"> 
-                        </td>
-                    </tr>
-    
-                </table>
+                <h4 class="chamadas">Dados Pessoais</h4><br>
 
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" class="entrada" placeholder="somente letras" ><br><br> 
 
+                <label for="cpf">CPF</label><br> 
+                <input type="text" name="cpf" id="cpf"   class="entrada" placeholder="somente numeros" ><br><br> 
 
+                <label for="tel">Telefone</label><br> 
+                <input type="tel" name="tel" id="tel"  class="entrada" placeholder="(00) 0000-0000"><br><br> 
 
-
+                <label for="tel">Celular</label><br> 
+                <input type="tel" name="cel" id="cel"  class="entrada" placeholder="(00) 00000-0000"> 
             </div>
 
             <div class="col-12 col-md-4" id="Elemento_2">
-                <table>
-                    <tr>
-                        <td><h4 class="chamadas">Endereço</h4><br></td>
-                        <td></td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label>Cep:</label>
-                        <td>               
-                           <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" class="entrada">
-                          <span class="pequeno">&nbsp&nbsp < tecle "TAB" para pesquisar > </tecle></span>
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label>Rua:</label>
-                        </td>
-                        <td>
-                            <input name="rua" type="text" id="rua" size="40" class="entrada" disabled>                   
-                        </td>
-                    </tr>
+                
+                <h4 class="chamadas">Endereço</h4><br>
 
-                    <tr>
-                        <td>
-                            <label>Numero:</label>
-                        </td>
-                        <td>
-                            <input name="num" type="text" id="num" size="5" class="entrada">                   
-                        </td>
-                    </tr>   
-                       
-                    <tr>
-                        <td>
-                            <label>Complemento:</label>
-                        </td>
-                        <td>
-                            <input name="comp" type="text" id="comp" size="10" class="entrada">                   
-                        </td>
-                    </tr>   
+                <label>Cep</label><br>          
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" class="entrada">
+                <span class="pequeno">&nbsp&nbsp < tecle "TAB" para pesquisar > </tecle></span><br><br>
 
-                    <tr>
-                        <td>
-                            <label>Bairro:<label>
-                        </td>
-                        <td>
-                            <input name="bairro" type="text" id="bairro" size="15" class="entrada" disabled>
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label>Cidade:</label>
-                        </td>
-                        <td>
-                            <input name="cidade" type="text" id="cidade" size="15" class="entrada" disabled>                       
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td>
-                            <label>Estado:</label>
-                        </td>
-                        <td>
-                            <input name="uf" type="text" id="uf" size="2" class="entrada" disabled>     
-                        </td>
-                    </tr>   
-                </table>
+                <label>Rua</label><br>
+                <input name="rua" type="text" id="rua" size="40" class="entrada" disabled><br><br>                   
+                
+                <label>Numero</label><span>&nbsp&nbsp&nbsp&nbsp&nbsp</span><label>Complemento</label><br>
+                <input name="num" type="text" id="num" size="5" class="entrada"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>                   
+                <input name="comp" type="text" id="comp" size="10" class="entrada"><br><br>    
+
+                <label>Bairro</label><br>
+                <input name="bairro" type="text" id="bairro" size="15" class="entrada" disabled><br><br>
+
+
+                <section class="flutuar-e">
+                    <label>Cidade</label><br>
+                    <input name="cidade" type="text" id="cidade" size="15" class="entrada" disabled>
+                    <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                </section>
+
+                <section class="flutuar-e">
+                    <label class="flutuar-d">Estado</label><br>                          
+                    <input name="uf" type="text" id="uf" size="2" class="entrada" disabled>  
+                </section>
+
+
             </div>
         </div>
 

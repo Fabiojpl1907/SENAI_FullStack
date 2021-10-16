@@ -67,6 +67,13 @@ body {
   padding-top: 2%;
 }
 
+.flutuar-d{
+  float: right;
+}
+
+.flutuar-e{
+  float: left;
+}
 
 /* ---lema:todas as paginas  --------------------------------------------- */
 .lema{
