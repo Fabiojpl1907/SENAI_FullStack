@@ -8,7 +8,7 @@ drop trigger if exists Atualiza_Pais;
 
 -- trigger (gatilho) de atualização da tabela 'pais' quando da inclusão
 -- de dados na tabela 'jogos'
-delimiter //
+-- delimiter //
 create trigger Atualiza_Pais 
 	after insert
     on jogos for each row
@@ -61,7 +61,8 @@ create trigger Atualiza_Pais
                 pais.golscontra = pais.golscontra + new.gols_idpais_1
                 where pais.idpais = new.pais_idpais_2;
 		end if;
-	end; //
+	end; 
+    -- //
 
 -- tabela jogos - fase 1 
 -- rodada 1 
@@ -92,7 +93,7 @@ insert into jogos values(22,'2020/12/01 20:00',5200,1190,1210,3,0,37854);
 insert into jogos values(23,'2020/12/02 17:00',5300,1230,1240,1,0,30542);
 insert into jogos values(24,'2020/12/02 20:00',5000,1220,1250,2,0,66729);
 
--- tabela gols 
+-- tabela gols ( Refazer )
 insert into gols values(1,2240,'22:15');
 insert into gols values(1,2245,'51:44');
 insert into gols values(1,2445,'62:11');
