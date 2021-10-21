@@ -183,13 +183,15 @@ color: #c1b696;
 }
 
 .botao{
+  
+  font-size: small;
   border-radius: 10px;
   font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   color: rgb(248, 169, 22);
   height: 100%;
-  width: 100%;
+  width: 75%;
   
 }
 
