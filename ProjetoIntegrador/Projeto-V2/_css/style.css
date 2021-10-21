@@ -201,6 +201,38 @@ color: #c1b696;
   font-size: clamp(  0.7vw, 1vw, 1.5vw));
 } */
 
+/* ----- Contato ------------------------- */
+
+
+.formulario{
+
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 3vw, 3vw);
+  text-align: center;
+  padding-top: 1%;
+  line-height: 70%;
+  margin-bottom: 3%;
+}
+
+
+.form{
+
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 1vw, 1.2vw, 2vw);
+
+}
+
+
+.campos{
+
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp( 1vw, 1vw, 2vw);
+
+}
+
+
+
 
 /* --- para teste de layout --------------------------------- */
 /* .row{
@@ -209,7 +241,8 @@ color: #c1b696;
   padding-top: 2%;
 }  */
 
+
 /* .container, .col-3, .col-4, .col-6, .col-8, .col-9,
-.col-md-4, .col-12, .col-md-8{
+.col-md-4, .col-12, .col-md-8, .col-md-4{
   border: 1px solid red;
 } */
