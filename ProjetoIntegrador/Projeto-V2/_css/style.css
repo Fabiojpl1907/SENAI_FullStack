@@ -215,23 +215,13 @@ color: #c1b696;
   margin-bottom: 3%;
 }
 
-
-.form{
-
+.input-padrao {
   font-family: 'Raleway', sans-serif;
-  font-size: clamp( 1vw, 1.2vw, 2vw);
-
+	display: block;
+	padding: 5px 10px;
+  background: linear-gradient(#FEFEFE, rgb(243, 243, 241), rgb(241, 243, 239));
+  border-radius: 5px; 
 }
-
-
-.campos{
-
-  font-family: 'Raleway', sans-serif;
-  font-size: clamp( 1vw, 1vw, 2vw);
-
-}
-
-
 
 
 /* --- para teste de layout --------------------------------- */
