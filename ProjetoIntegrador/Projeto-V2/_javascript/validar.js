@@ -53,21 +53,18 @@ function validar_tel() {
   return true;
 }
 
-//Validar celular
-function validar_cel() {
+// function validar_email() {
 
-  $('input[name="cel"]').mask('(00) 00000-0000');
-  
-  let value = document.getElementById("cel").value;
-  
-  if (value == "" || value == null) {
-    // campo inválido, retorna false para o formulário não ser submetido
-    alert('Celular não informado');
-    document.form.mail.focus();
-    return false;
-  }
-  return true;
-}
+//   let value = document.getElementById("email").value;
+
+//   if (value == "" || value == null ) {
+//     // campo inválido, retorna false para o formulário não ser submetido
+//     alert('e-mail não informado');
+//     document.form.nome.focus();
+//     return false;
+//   }
+//   return true;
+// }
 
 function validar_parc() {
   
@@ -186,7 +183,7 @@ else {
 
 function validar_tudo() {
   // se um deles for inválido, retorna false e o form não é submetido
-  if (validar_nome() && validar_cpf() && validar_tel() && validar_cel() && validar_parc() && validar_cep() && validar_num())
+  if (validar_nome() && validar_cpf() && validar_tel() && validar_parc() && validar_cep() && validar_num()  )
             {
             document.getElementById('assinar').removeAttribute('disabled'); // ativar botao cadastrar
             alert("Tudo certo. Proximo passo Cadastrar");
