@@ -35,13 +35,13 @@ function validar_cpf() {
 //Validar telefone
 function validar_tel() {
 
-  $('input[name="tel"]').mask('(00) 0000-0000');
+  $('input[name="wap"]').mask('(00) 00000-0000');
   
-  let value = document.getElementById("tel").value;
+  let value = document.getElementById("wap").value;
   
   if (value == "" || value == null) {
     // campo inválido, retorna false para o formulário não ser submetido
-    alert('Telefone não informado');
+    alert('Whatapss não informado');
     document.form.mail.focus();
     return false;
   }
@@ -64,7 +64,17 @@ function validar_cel() {
   return true;
 }
 
-//Validar CEP
+function validar_parc() {
+  
+  if ($('#parc').val().trim() === '') {
+    alert('Parceria não selecionada');
+    return false;
+  }
+  return true;
+}
+
+
+//Validar CEP - entrada
 function validar_cep() {
 
   $('input[name="cep"]').mask('00000-000');
@@ -171,7 +181,7 @@ else {
 
 function validar_tudo() {
   // se um deles for inválido, retorna false e o form não é submetido
-  if (validar_nome() && validar_cpf() && validar_tel() && validar_cel() && validar_cep() && validar_num())
+  if (validar_nome() && validar_cpf() && validar_tel() && validar_cel() && validar_parc() && validar_cep() && validar_num())
             {
             document.getElementById('assinar').removeAttribute('disabled'); // ativar botao cadastrar
             alert("Tudo certo. Proximo passo Cadastrar");
