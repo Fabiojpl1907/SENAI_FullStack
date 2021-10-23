@@ -16,19 +16,24 @@ function validar_nome() {
 
 //Validar CPF
 function validar_cpf() {
-  
-  $('input[name="cpf"]').mask('00000000000');
- 
-    let value = document.getElementById("cpf").value;
-  
+
+
+  let comp= document.getElementById("cpf").value.length;
+  let value = document.getElementById("cpf").value;
+
   if (value == "" || value == null || TestaCPF(value) == false ) {
     // campo inválido, retorna false para o formulário não ser submetido
-    alert('CPF não informado ou inválido');
+    alert('CPF / CNPJ não informado ou inválido');
     document.form.cpf.focus();
     return false;
   } 
+  if(comp < 14 || value[11] == "-"){
+    $("#cpf").mask("999.999.999-99");
+    } else {
+      $("#cpf").mask("99.999.999/9999-99");
+    }
   return true;
-  }
+}
 
 
 
@@ -209,34 +214,86 @@ function encerra(){
 
 
 
-
-
 // -Validar CPF - ---------------------------------------
 
 function TestaCPF(strCPF) {
-  var Soma;
-  var Resto;
-  Soma = 0;
-if (strCPF == "00000000000") return false;
 
-for (i=1; i<=9; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
-Resto = (Soma * 10) % 11;
+  var tamanho = strCPF.length
 
-  if ((Resto == 10) || (Resto == 11))  Resto = 0;
-  if (Resto != parseInt(strCPF.substring(9, 10)) ) return false;
+  if ( tamanho < 14 ) {   
+        var Soma;
+        var Resto;
+        Soma = 0;
+          if (strCPF == "00000000000") return false;
 
-Soma = 0;
-  for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
-  Resto = (Soma * 10) % 11;
+          for (i=1; i<=9; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+          Resto = (Soma * 10) % 11;
 
-  if ((Resto == 10) || (Resto == 11))  Resto = 0;
-  if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
-  return true;
-}
+            if ((Resto == 10) || (Resto == 11))  Resto = 0;
+            if (Resto != parseInt(strCPF.substring(9, 10)) ) return false;
 
+          Soma = 0;
+            for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
+            Resto = (Soma * 10) % 11;
 
+            if ((Resto == 10) || (Resto == 11))  Resto = 0;
+            if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
+            return true;
+  }
 
-// --------------------------------------------------
+  else{
+    
+    var cnpj = strCPF;
 
-// Capturar formlario em formato jason------
-
+    cnpj = cnpj.replace(/[^\d]+/g,'');
+ 
+    if(cnpj == '') return false;
+     
+    if (cnpj.length != 14)
+        return false;
+ 
+    // Elimina CNPJs invalidos conhecidos
+    if (cnpj == "00000000000000" || 
+        cnpj == "11111111111111" || 
+        cnpj == "22222222222222" || 
+        cnpj == "33333333333333" || 
+        cnpj == "44444444444444" || 
+        cnpj == "55555555555555" || 
+        cnpj == "66666666666666" || 
+        cnpj == "77777777777777" || 
+        cnpj == "88888888888888" || 
+        cnpj == "99999999999999")
+        return false;
+         
+    // Valida DVs
+    tamanho = cnpj.length - 2
+    numeros = cnpj.substring(0,tamanho);
+    digitos = cnpj.substring(tamanho);
+    soma = 0;
+    pos = tamanho - 7;
+    for (i = tamanho; i >= 1; i--) {
+      soma += numeros.charAt(tamanho - i) * pos--;
+      if (pos < 2)
+            pos = 9;
+    }
+    resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+    if (resultado != digitos.charAt(0))
+        return false;
+         
+    tamanho = tamanho + 1;
+    numeros = cnpj.substring(0,tamanho);
+    soma = 0;
+    pos = tamanho - 7;
+    for (i = tamanho; i >= 1; i--) {
+      soma += numeros.charAt(tamanho - i) * pos--;
+      if (pos < 2)
+            pos = 9;
+    }
+    resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+    if (resultado != digitos.charAt(1))
+          return false;
+           
+    return true;
+  }  // fim do if CPF / CNPJ 
+          
+} // fim da função 
