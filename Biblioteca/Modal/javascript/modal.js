@@ -13,6 +13,7 @@ function iniciaModal(modalID) {
     }
 }
 
+
 const logo = document.querySelector('.contato .button');
 logo.addEventListener('click', () => iniciaModal('modal-promocao'));
 
