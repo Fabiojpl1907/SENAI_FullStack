@@ -22,4 +22,5 @@ Sinta-se livre para colaborar
     - Uso basico do Jasmine
 
 UC10 - Banco de Dados
+UC11 - Modelagem de dados + Inicio programação Java
 
