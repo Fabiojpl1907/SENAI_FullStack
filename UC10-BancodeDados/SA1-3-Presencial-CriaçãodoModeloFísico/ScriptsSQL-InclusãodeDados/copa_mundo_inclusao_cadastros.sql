@@ -2,7 +2,7 @@
 
 use copa_mundo;
 
--- tabela grupo dos paises 
+-- tabela grupo dos paises e times
 insert into grupo values('A', 'Grupo A');
 insert into grupo values('B', 'Grupo B');
 insert into grupo values('C', 'Grupo C');
