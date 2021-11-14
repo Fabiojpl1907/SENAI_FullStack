@@ -12,4 +12,12 @@ Saldo: 100.0
 Senha: abc#1234 
 
 --- Conta Corrente --- 
-Número Documento: 23456789 Agência: 100 Conta 34567 Valor: 50.0 Tipo: 1 (Depósito) Data Ocorrência: 20/10/2021 Saldo anterior: 100.0 Saldo atualizado: 150.0 Mensagem: Ocorrência Registrada
+Número Documento: 23456789 
+Agência: 100 
+Conta 34567 
+Valor: 50.0 
+Tipo: 1 (Depósito) 
+Data Ocorrência: 20/10/2021 
+Saldo anterior: 100.0 
+Saldo atualizado: 150.0 
+Mensagem: Ocorrência Registrada

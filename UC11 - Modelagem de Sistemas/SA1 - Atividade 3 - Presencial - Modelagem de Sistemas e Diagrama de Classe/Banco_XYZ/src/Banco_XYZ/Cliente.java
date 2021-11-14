@@ -5,7 +5,7 @@ public class Cliente {
 		// definição das caracteristicas do cliente 
 		Integer agencia, conta ;
 		String nome, cpf, nascimento, endereco, telefone, senha ;
-		Float saldo;
+		static Float saldo;
 		
 		// métodos para capturar informações 
 		
