@@ -1,0 +1,15 @@
+________________
+
+--- Dados do cliente --- 
+Agência: 100 
+Conta: 34567 
+CPF: 123.456.788-90 
+Nome: José da Silva 
+Nascimento: 15/06/1995 
+Endereço: Av. dos Autonomistas 234 
+Telefone: (11)9123-456 
+Saldo: 100.0 
+Senha: abc#1234 
+
+--- Conta Corrente --- 
+Número Documento: 23456789 Agência: 100 Conta 34567 Valor: 50.0 Tipo: 1 (Depósito) Data Ocorrência: 20/10/2021 Saldo anterior: 100.0 Saldo atualizado: 150.0 Mensagem: Ocorrência Registrada
