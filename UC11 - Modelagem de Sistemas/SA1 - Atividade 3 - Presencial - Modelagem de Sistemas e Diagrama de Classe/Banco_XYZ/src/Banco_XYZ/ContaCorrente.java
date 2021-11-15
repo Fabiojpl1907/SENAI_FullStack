@@ -10,7 +10,7 @@ public class ContaCorrente {
 	// metodos para capturar as informações
 	
 	public void setNumdoc(Integer numero_doc) {
-        this.numero_doc_cc = numero_doc;
+        this.numero_doc_cc = numero_doc_cc;
     }
 	
 	public void setAgenciacc(Integer agencia) {
@@ -37,22 +37,26 @@ public class ContaCorrente {
         this.data_ocorrencia_cc = data_ocorrencia;
     }
 
+	// métodos para tratar o saldo 
+	
 	public void AtualizarSaldo() {
 		
 		this.saldo_cc = this.saldo_cc + this.valor_cc;
-		System.out.println("\nMovimento tipo : " + tipo_cc + " no valor de : " + valor_cc);
-		System.out.println("Saldo Conta Corrente Atualizado : " + saldo_cc);
+		System.out.println("\nMovimento tipo : " + this.tipo_cc + " no valor de : " + this.valor_cc);
+		System.out.println("Saldo Conta Corrente Atualizado : " + this.saldo_cc);
+		
 		// linha abaixo atualiza saldo do cadastro de cliente
-		Cliente.saldo = saldo_cc;
+		Cliente.saldo = this.saldo_cc;
 		System.out.println("\nSaldo Cliente Atualizado : " + Cliente.saldo);
 		
 	}	
 		
 	public void RegistrarOcorrencia(){
-		System.out.println("\nOcorrência Registrada em " + data_ocorrencia_cc);
+		System.out.println("\nOcorrência Registrada em " + this.data_ocorrencia_cc);
 	}	
 	
-	// metodo criadoa para testar se tudo esta funcionado e os valores 
+	
+	// metodo criado para testar se tudo esta funcionado e os valores 
 	// estão sendo tratados como esperado 
 	public void mostrarcc() {
 		System.out.println("\nDados de sua conta\n");

@@ -16,7 +16,6 @@ public class Cliente {
 		public void setConta(Integer conta) {
 	        this.conta = conta;
 	    }
-		
 	
 		public void setcpf(String cpf) {
 	        this.cpf = cpf;
@@ -48,15 +47,15 @@ public class Cliente {
 
 		public void mostrar() {
 			System.out.println("Bem vindo ao Banco XYZ\n");
-			System.out.println("Agencia : " + agencia);
-			System.out.println("Conta : " + conta);
-			System.out.println("CPF : " + cpf);
-			System.out.println("Nome : " + nome);
-			System.out.println("Nascimento : " + nascimento);
-			System.out.println("Endereço : " + endereco);
-			System.out.println("Telefone : " + telefone);
-			System.out.println("Saldo: " + saldo);			
-			System.out.println("Senha : " + senha);
+			System.out.println("Agencia : " + this.agencia);
+			System.out.println("Conta : " + this.conta);
+			System.out.println("CPF : " + this.cpf);
+			System.out.println("Nome : " + this.nome);
+			System.out.println("Nascimento : " + this.nascimento);
+			System.out.println("Endereço : " + this.endereco);
+			System.out.println("Telefone : " + this.telefone);
+			System.out.println("Saldo: " + this.saldo);			
+			System.out.println("Senha : " + this.senha);
 		}
 
 }
