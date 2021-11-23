@@ -6,10 +6,10 @@ public class BancoXYZ {
 	public static void main(String[] args) {
 			
 		//Cliente
-		// instanciando/ Criar um cliente 
+		// instanciando a entidade cliente ( criando novo cliente -> c1 ) 
         Cliente c1 = new Cliente();
         
-        // Registar dados do cliente C1 
+        // fornencendo os dados do cliente C1 
         c1.setAgencia(100);
         c1.setConta(34567);
         c1.setcpf("123.456.788-90");
