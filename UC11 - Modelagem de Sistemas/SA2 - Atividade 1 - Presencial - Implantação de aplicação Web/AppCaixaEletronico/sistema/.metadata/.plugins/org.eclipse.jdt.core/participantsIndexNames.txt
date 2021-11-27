@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\soste\OneDrive - SESISENAISP - Corporativo\sos\SENAI\UC 11\Caixa Eletrônico\revisao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\894948732.index
+\CaixaEletronico\src\main\java
+C:\Users\soste\OneDrive - SESISENAISP - Corporativo\sos\SENAI\UC 11\Caixa Eletrônico\sistema\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\894948732.index
+\CaixaEletronico\src\main\java

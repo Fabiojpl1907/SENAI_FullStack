@@ -1,0 +1,29 @@
+package classes;
+
+import java.sql.*;
+import java.sql.DriverManager;
+
+public class ConectaBD {
+	public String usuario;
+	public String senha;
+	public String url;
+	public Connection conn;
+	
+	ConectaBD()
+	{
+		usuario = "sos";
+        senha = "sosadmin";
+        url = "jdbc:mysql://localhost/contasbanco";
+	}
+	
+	public void Conectar()
+	{
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+	        java.sql.Connection conn = DriverManager.getConnection(url, usuario, senha);
+			} 
+			catch (Exception e) {
+				System.out.println(e.getMessage());
+			}	
+	}
+}

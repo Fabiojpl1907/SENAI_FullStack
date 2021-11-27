@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\sos\SENAI\UC 11\Caixa Eletrônico\sistema\.metadata\.plugins\org.eclipse.jdt.core
+1672273201.index
+147253224.index
+1865797976.index

@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\sos\SENAI\UC 11\Caixa Eletrônico\sistema\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1017765000.index
+1321636008.index
+1672273201.index
+3812277214.index
+502971605.index

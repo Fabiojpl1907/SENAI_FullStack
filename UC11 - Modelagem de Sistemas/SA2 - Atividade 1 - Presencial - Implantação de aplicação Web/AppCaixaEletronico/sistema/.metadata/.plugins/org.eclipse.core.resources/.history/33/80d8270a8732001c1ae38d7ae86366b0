@@ -1,0 +1,15 @@
+
+div, input, select, tr {
+	font: 20pt arial;
+	}
+
+.padrao {background: silver; 
+		text-align: center; 
+		font: 20pt arial;
+		}
+a {text-decoration: none;}
+li {display: inline;}
+li a:hover {background: blue; 
+			color: white;
+			text-decoration: none;
+			}

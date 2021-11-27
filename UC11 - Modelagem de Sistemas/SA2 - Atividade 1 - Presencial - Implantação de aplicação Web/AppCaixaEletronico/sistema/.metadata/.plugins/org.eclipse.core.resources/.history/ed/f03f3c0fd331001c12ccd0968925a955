@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Simulador de Caixa Eletrônico</title>
+<script src="modulos.js"></script>
+</head>
+<body>
+<div>Simulador de Caixa Eletrônico</div>
+<div>
+<form action="ce_002.jsp" method="post"> <br>
+Agência 
+<input type="text" name="agencia" placeholder="Agência"> <br>
+Conta Corrente 
+<input type="text" name="conta" placeholder="Conta Corrente"> <br>
+Operação
+<select id="op" name="opn" onchange="MostraDoc()">
+	<option value="0">--- Escolha uma operação ---</option>
+	<option value="1">1 - Depósito</option>
+	<option value="2">2 - Saque</option>
+	<option value="3">3 - Pagamento</option>
+</select> 
+<label id="doc_txt">Número documento</label>
+<input type="text" id="doc" name="documento" 
+placeholder="Número do documento" style="display:none">
+<br>
+Valor
+<input type="text" name="valor" placeholder="Valor"><br>
+<input type="submit" value="Enviar"> <br>
+</form>
+</div>
+</body>
+</html>

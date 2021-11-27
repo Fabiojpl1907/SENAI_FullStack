@@ -1,0 +1,52 @@
+package classes;
+
+import java.sql.*;
+
+public class ConectaBD {
+	public String login;
+	public String senha;
+	public String url;
+	
+	public void Conectar()
+	{
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String usuario = "sos";
+	        String senha = "sosadmin";
+	        String url = "jdbc:mysql://localhost/contasbanco";
+	        java.sql.Connection conn = DriverManager.getConnection(url, usuario, senha);
+	        /*
+	        // inclusão modo concatenação
+	        String Sql = "insert into contacorrente values(" + getNumero_doc_cc() + "," 
+	                + getAgencia_cc() + "," + getConta_cc() + "," 
+	        		+ getValor_cc() + "," + getTipo_cc() + ")"; 
+	        */
+	        
+	        /*
+	        // inclusão modo parametrizado (@)
+	        String Sql = "insert into "
+	        		+ "contacorrente(numero_doc, agencia, conta, valor, tipo) "
+	        		+ "values(@numero_doc_cc,@agencia_cc,@conta_cc,@valor_cc,@tipo_cc)";
+	       	*/
+	        
+	        // inclusão modo objeto PreparedStatement
+	        String Sql = "insert into "
+	        		+ "contacorrente(numero_doc, agencia, conta, valor, tipo) "
+	        		+ "values(?,?,?,?,?)";	        
+	        PreparedStatement comando = (PreparedStatement) conn.prepareStatement(Sql);	        
+	        // inclusão modo objeto PreparedStatement - continuação
+	        comando.setInt(1, numero_doc_cc);
+	        comando.setInt(2, agencia_cc);
+	        comando.setInt(3, conta_cc);
+	        comando.setFloat(4, valor_cc);
+	        comando.setInt(5, tipo_cc);
+	        // execução da inclusão
+	        comando.execute();
+	        comando.close();
+			} 
+			catch (Exception e) {
+				System.out.println(e.getMessage());
+			}	
+	}
+	}
+}

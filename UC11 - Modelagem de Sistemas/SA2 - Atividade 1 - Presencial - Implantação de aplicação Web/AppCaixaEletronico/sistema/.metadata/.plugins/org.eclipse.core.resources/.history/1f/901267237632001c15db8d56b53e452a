@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+div, input, select {
+	font: 20pt arial;
+	}
+	
+tr {
+	font: 20pt arial;
+	}

@@ -1,0 +1,81 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%-- classes Java --%>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Random" %>
+<%-- classes da aplicação Caixa Eletrônico --%>
+<%@ page import="classes.Cliente" %>
+<%@ page import="classes.ContaCorrente" %>
+
+<%
+int dc = 0;
+int ag = Integer.parseInt(request.getParameter("agencia"));
+int cc = Integer.parseInt(request.getParameter("conta"));
+int op = Integer.parseInt(request.getParameter("opn"));
+String vrx = request.getParameter("valor");
+// converte string valor para float
+String vx = vrx;
+vx = vx.replace(".","");
+vx = vx.replace(",",".");
+float vr = Float.parseFloat(vx);
+// formato de data atual para apresentar na página
+SimpleDateFormat df1 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); 
+// verifica se número de documento é aleatório - 1 ou 2 
+if(op == 1 || op == 2)
+{
+	Random nr = new Random();
+	dc = (nr.nextInt(100) + 1) * 10000;
+}
+else
+{
+	dc = Integer.parseInt(request.getParameter("documento"));
+}
+String msg;
+//Cria objeto 'cta' com base na classe ContaCorrente - instância
+ContaCorrente cta = new ContaCorrente();
+// transfere dados para a classe ContaCorrente
+cta.setNumero_doc_cc(dc);
+cta.setAgencia_cc(ag);
+cta.setConta_cc(cc);
+cta.setValor_cc(vr);
+cta.setTipo_cc(op);
+//executa método para atualizar saldo
+if(cta.AtualizarSaldo(true))
+{
+	// executa método para registrar ocorrência
+	// caso saldo seja suficiente
+	cta.RegistrarOcorrencia();
+	msg = "Saldo Atualizado e Ocorrência Registrada";
+}
+else
+{
+	msg = "Operação Inválida - Saldo Insuficiente";
+}
+//data e hora do momento
+Date agora = new Date();
+%> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Simulador de Caixa Eletrônico</title>
+
+</head>
+<body>
+<div>Simulador de Caixa Eletrônico</div>        
+<table>
+<tr><td>Agência</td><td><%=ag%></td></tr>
+<tr><td>C/C</td><td><%=cc%></td></tr>
+<tr><td>Cliente</td><td><%=cta.getCliente_cc()%></td></tr>
+<tr><td>Data/Hora</td><td><%=df1.format(agora)%></td></tr>
+<tr><td>Documento</td><td><%=dc%></td></tr>
+<tr><td>Operação</td><td><%=op%></td></tr>
+<tr><td>Valor</td><td><%=vrx%></td></tr>
+<tr><td>Saldo</td><td><%=cta.getSaldo_cc()%></td></tr>
+<tr><td>Mensagem</td><td><%=msg%></td></tr>
+</table>
+
+</body>
+</html>
